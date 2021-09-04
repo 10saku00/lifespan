@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>あなたの残り時間</title>
+    <link rel="stylesheet" href="lifespan.css">
+</head>
+<body>
+    <header>
+        <img src="icon.png" alt="製作者さくの画像" class="title">
+        <h1 class="title">さくルーム</h1>
+    </header>
+    <h2>あなたの残り時間</h2>
+    <h3>・あなたの誕生日を入力してください</h3>
+    <form id="input">
+    <input type="date" id="birthday" value="2000-01-01">
+    <input type="button" value="計算" id="calc">
+    </form>
+    <br>
+    <form id="display">
+        <input type="radio" name="which" value="second">秒数で表示
+        <input type="radio" name="which" value="day">日数で表示
+    </form>
+    <div id="result-area"></div>
+    <script src="lifespan.js"></script>
+</body>
+</html>
