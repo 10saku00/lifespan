@@ -37,6 +37,12 @@ calc.onclick = () => {
     if (a == 'second') {
         result = document.createElement('h3');
         result.innerText = 'あなたに残された時間は '　+ lifespan / 1000 + '  秒です。';
+    }else if (a == 'minute') {
+        result = document.createElement('h3');
+        result.innerText = 'あなたに残された時間は　' + parseInt(lifespan / 60000) + ' 分です。';
+    }else if (a == 'hour') {
+        result = document.createElement('h3');
+        result.innerText = 'あなたに残された時間は　' + parseInt(lifespan / 3600000) + ' 時間です。';
     }else if (a == 'day') {
         result = document.createElement('h3');
         result.innerText = 'あなたに残された時間は　' + parseInt(lifespan / 86400000) + ' 日です。';
